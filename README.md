@@ -5,9 +5,10 @@ The timer that was used was the Timer 2 to generate 1 microsecond delay.
 TrigPulse() function is also create to create the initial trigger for the Ultrasonic Sensor to start the Ultrasonic burst for sensing. 
 
 Given below is the while loop which is to be written in the main.c
-while (1) 
- {  
- 
+
+while(1) 
+{  
+
     Trig_Pulse();
     
     uint32_t timeout = TIM2->CNT;
